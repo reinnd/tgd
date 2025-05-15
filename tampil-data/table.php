@@ -26,6 +26,7 @@ $result = $query->fetch_all(MYSQLI_ASSOC);
                 <th>Nama</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>aksi</th>
 
             </tr>
         </thead>
@@ -34,10 +35,14 @@ $result = $query->fetch_all(MYSQLI_ASSOC);
             <?php foreach ($result as $data) :   ?>
                 
                 <tr>
-                    <th><?= $data['IDtamu']; ?></th>
-                    <th><?= $data['nama'];?></th>
-                    <th><?= $data['email'];?></th>
-                    <th><?= $data['phone'];?></th>
+                    <td><?= $data['IDtamu']; ?></td>
+                    <td><?= $data['nama'];?></td>
+                    <td><?= $data['email'];?></td>
+                    <td><?= $data['phone'];?></td>
+                    <td>
+                        <button>edit</button>
+                        <a href="hapus.php?id= <?=$data['IDtamu']?> ">Hapus</a>
+                    </td>
                 </tr>
 
             <?php endforeach ?>

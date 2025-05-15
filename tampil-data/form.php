@@ -6,19 +6,19 @@
     <title>Tambah Data</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="tambah.php" method="post">
 
-        <label for="IDtamu">ID tamu</label><br>
+        <label for="IDtamu"></label><br>
         <input type="number" name="IDtamu"><br>
 
         <label for="nama">Nama</label><br>
         <input type="text" name="nama"><br>
 
         <label for="email">Email</label><br>
-        <input type="email" nama="email"><br>
+        <input type="email" name="email"><br>
 
         <label for="telp">No Telp</label><br>
-        <input type="text" nama="telp"><br><br>
+        <input type="text" name="telp"><br><br>
 
         <input type="submit" value="kirim">
 
