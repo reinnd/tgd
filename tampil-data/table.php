@@ -40,7 +40,7 @@ $result = $query->fetch_all(MYSQLI_ASSOC);
                     <td><?= $data['email'];?></td>
                     <td><?= $data['phone'];?></td>
                     <td>
-                        <button>edit</button>
+                        <a href="edit.php?id= <?=$data['IDtamu']?>">edit</a>
                         <a href="hapus.php?id= <?=$data['IDtamu']?> ">Hapus</a>
                     </td>
                 </tr>

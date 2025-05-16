@@ -9,7 +9,7 @@
     <form action="tambah.php" method="post">
 
         <label for="IDtamu"></label><br>
-        <input type="number" name="IDtamu"><br>
+        <input type="number" name="IDtamu" hidden><br>
 
         <label for="nama">Nama</label><br>
         <input type="text" name="nama"><br>
